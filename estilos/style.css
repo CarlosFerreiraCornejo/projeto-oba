@@ -1,5 +1,35 @@
 @charset "UTF-8";
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.103);
+}
+
 h1 {
+    background-image: linear-gradient(to top, #000000, #553C28, #AD4D00);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+nav {
     background-color: black;
+}
+
+.menu {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    word-spacing: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu > ul > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
