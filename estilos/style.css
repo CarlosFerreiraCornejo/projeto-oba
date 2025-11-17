@@ -5,11 +5,17 @@
     padding: 0px;
 }
 
+body {
+    background-image: url("../imagens/index-imagem1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 header {
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.103);
 }
 
-h1 {
+header > h1 {
     background-image: linear-gradient(to top, #000000, #553C28, #AD4D00);
     text-align: center;
     padding-top: 30px;
@@ -18,18 +24,69 @@ h1 {
 
 nav {
     background-color: black;
-}
-
-.menu {
     display: flex;
-    padding: 30px;
     justify-content: center;
-    word-spacing: 200px;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+    word-spacing: 100px;
 }
 
-.menu > ul > a {
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li> a {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+nav > ul > li > a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main > article > h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    background-image: linear-gradient(to right, #000000, #553C28, #AD4D00);
+    margin-bottom: 8px;
+    padding: 10px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.445);
+}
+
+main > article > p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+footer{
+    background-image: linear-gradient(to top, #000000, #553C28, #AD4D00);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.445);
 }
