@@ -129,3 +129,156 @@ footer > p {
     color: white;
     text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.445);
 }
+
+/* Estilos para imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Media Queries para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    header > h1 {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    header > h1 > img {
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
+    nav {
+        padding-bottom: 15px;
+        word-spacing: 0px;
+        flex-wrap: wrap;
+    }
+
+    nav > ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav > ul > li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #333;
+    }
+
+    nav > ul > li > a {
+        padding: 15px;
+        display: block;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+    main > article > h1 {
+        font-size: 1.2em;
+        padding: 15px 10px;
+    }
+
+    main > h1 {
+        font-size: 1.2em;
+        padding: 15px 10px;
+    }
+
+    main > article > p {
+        padding: 15px;
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .section-servicos {
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .servico {
+        padding: 20px 15px;
+        font-size: 14px;
+    }
+
+    .servico h2 {
+        font-size: 1.1em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    footer > p {
+        font-size: 12px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header > h1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    header > h1 > img {
+        max-width: 120px;
+    }
+
+    nav > ul > li > a {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    main {
+        margin: 5px;
+        margin-bottom: 15px;
+    }
+
+    main > article > h1,
+    main > h1 {
+        font-size: 1.1em;
+        padding: 12px 8px;
+    }
+
+    main > article > p {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .section-servicos {
+        padding: 8px;
+    }
+
+    .servico {
+        padding: 15px 12px;
+        font-size: 13px;
+    }
+
+    .servico h2 {
+        font-size: 1em;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    footer > p {
+        font-size: 11px;
+    }
+}
